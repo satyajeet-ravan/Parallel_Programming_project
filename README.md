@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Adaptive Parallel Image Enhancement Using OpenMP
 
 Local B.Tech Parallel Programming project: sequential and OpenMP Histogram Equalization, benchmark-guided adaptive thread selection, image metrics, Express API and React dashboard.
@@ -52,3 +53,4 @@ Only actual engine timings are recorded. The benchmark uses deterministic synthe
 
 ## Limitations
 The dashboard shows genuine run history and basic performance charts. Histogram persistence and full per-run quality metric history are not wired into the API yet. Validate SSIM against a trusted implementation before academic publication. OpenCV color conversion may use its own internal threading. No experimental values are prefilled.
+=======
