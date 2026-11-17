@@ -1,0 +1,2 @@
+import{useRef}from"react";import{UploadCloud}from"lucide-react";
+export default function ImageUploader({onFile}){const ref=useRef();return <div className="drop" onClick={()=>ref.current.click()} onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault();onFile(e.dataTransfer.files[0]);}}><input hidden ref={ref} type="file" accept=".jpg,.jpeg,.png,.bmp" onChange={e=>onFile(e.target.files[0])}/><UploadCloud size={30}/><b>Drop image here or browse</b><small>JPG, JPEG, PNG, BMP · 20 MB maximum</small></div>}

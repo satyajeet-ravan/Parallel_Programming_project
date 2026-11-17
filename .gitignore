@@ -1,0 +1,10 @@
+**/node_modules/
+**/dist/
+cpp-engine/build/
+images/input/*
+images/output/*
+!images/input/.gitkeep
+!images/output/.gitkeep
+experiments/graphs/
+experiments/test_*.png
+experiments/out_*.png

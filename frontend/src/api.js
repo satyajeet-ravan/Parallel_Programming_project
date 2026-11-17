@@ -1,0 +1,1 @@
+import axios from"axios";const api=axios.create({baseURL:import.meta.env.VITE_API_URL||"http://localhost:5000/api"});export default api;export const fileUrl=u=>(import.meta.env.VITE_FILES_URL||"http://localhost:5000")+u;

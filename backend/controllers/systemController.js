@@ -1,0 +1,1 @@
+import os from "os";export function info(_,res){res.json({success:true,platform:os.platform(),arch:os.arch(),cpu_model:os.cpus()[0]?.model||"Unknown",logical_cores:os.cpus().length,total_memory_bytes:os.totalmem(),free_memory_bytes:os.freemem()});}

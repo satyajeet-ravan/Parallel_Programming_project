@@ -1,0 +1,2 @@
+import{useEffect,useState}from"react";import api from"../api";import Topbar from"../components/Topbar";import HistoryTable from"../components/HistoryTable";
+export default function ExperimentHistory(){const[r,setR]=useState([]);useEffect(()=>{api.get("/benchmark").then(x=>setR(x.data.records)).catch(console.error)},[]);return <><Topbar title="Experiment History" subtitle="All genuine measurements recorded by the engine."/><section className="panel"><h2>Recorded experiments · {r.length}</h2><HistoryTable records={r}/></section></>}

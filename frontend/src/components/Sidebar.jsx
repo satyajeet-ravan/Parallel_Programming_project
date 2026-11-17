@@ -1,0 +1,3 @@
+import{NavLink}from"react-router-dom";import{Activity,BarChart3,Image,LayoutDashboard,History}from"lucide-react";
+const items=[["/","Dashboard",LayoutDashboard],["/enhance","Image Enhancement",Image],["/performance","Performance Analysis",BarChart3],["/quality","Image Quality",Activity],["/history","Experiment History",History]];
+export default function Sidebar(){return <aside className="sidebar"><div className="brand">◈ PIXELLAB <small>PARALLEL VISION</small></div><p className="nav-label">WORKSPACE</p>{items.map(([to,label,I])=><NavLink end={to==="/"} key={to} to={to} className={({isActive})=>"navlink "+(isActive?"active":"")}><I size={17}/>{label}</NavLink>)}<div className="side-foot">● Local engine<br/><small>OpenMP enabled</small></div></aside>}

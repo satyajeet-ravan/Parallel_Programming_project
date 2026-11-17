@@ -1,0 +1,1 @@
+export default function ImageComparison({before,after}){return <div className="compare">{[[before,"Original"],[after,"Enhanced"]].map(([src,t])=><div key={t}><b>{t}</b>{src?<img src={src} alt={t}/>:<div className="placeholder">Image preview</div>}</div>)}</div>}

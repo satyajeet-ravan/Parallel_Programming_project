@@ -1,0 +1,1 @@
+export default function Topbar({title,subtitle}){return <header className="topbar"><div><small>COMPUTER VISION WORKSPACE</small><h1>{title}</h1><p>{subtitle}</p></div><span className="online">● LOCAL SYSTEM</span></header>}
